@@ -1,0 +1,162 @@
+body {
+  height: 100vh;
+   background: linear-gradient(90deg,#e52e71,#ff8a00);
+}
+.slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 13%;
+  top: 13%;
+  width: 700px;
+  height: 700px;
+  background: #17141d;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
+
+  #profile_image {
+    width: 100px;
+    animation: sliderShape 5s linear infinite;
+    border: 2px solid rgb(230, 50, 110);
+    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+    transition: 0.5s;
+    }
+
+    #profile_image:hover {
+    width: 150px;
+    animation: sliderShape 5s linear infinite;
+    border: 2px solid rgb(230, 50, 110);
+    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+    transition: 0.5s;
+    }
+
+    h1, h2, h3 {
+      font-family: "Source Code Pro", monospace;
+      color: rgb(230, 50, 110);
+      font-size: 20px;
+      font-optical-sizing: auto;
+      font-weight: 100%;
+      font-style: normal;
+    }
+
+    h4 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(230, 50, 110);
+      font-size: 10px;
+      font-optical-sizing: auto;
+      font-weight: 80%;
+      font-style: normal;
+    }
+
+    p, a {
+      font-family: "Source Code Pro", monospace;
+      color: rgb(0, 0, 0);
+      font-size: 14px;
+      font-optical-sizing: auto;
+      font-weight: 100%;
+      font-style: normal;
+    }
+
+    .button {
+      background: rgb(255, 255, 255);
+      border: 3px solid rgb(230, 50, 110);
+      width: 150px;
+      margin: 15px auto;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .button:hover {
+      background: rgb(252, 130, 15);
+      border: 3px solid rgb(252, 130, 15);
+      width: 150px;
+      margin: 15px auto;
+      border-radius: 10px;
+      padding: 10px;
+      transition: 0.5s;
+      color: white !important;
+    }
+
+    .card {
+      text-align: center;
+      margin: 35px;
+      border-radius: 25px;  /* Rounded corners */
+      background: white;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.3);
+      width: 800px;   /* This sets the width */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 25px;
+      }
+
+    ul {
+      padding: 0;
+    }
+
+    .list-inline {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      display: inline-block;
+      padding: 10px 10px;
+    }
+
+    .list-inline a i {
+      font-size: 2em; /* Adjust the size as needed */
+      color: #484848;
+      transition: 0.5s;
+    }
+
+    .list-inline a i:hover {
+      font-size: 2em; /* Adjust the size as needed */
+      color: rgb(252, 130, 15);
+      transition: 0.5s;
+    }
+
+    @media (max-width: 960px) {
+      /* For a screen < 960px, this CSS will be read */
+      .container {
+        width: 700px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      /* For a screen < 720px, this CSS will be read */
+      .container {
+        width: 500px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      /* For a screen < 540px, this CSS will be read */
+      .container {
+        width: 300px;
+      }
+    }

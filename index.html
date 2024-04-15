@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <div class="slider-thumb">
+      <div class="container">
+        <div class="card">
+          <h1>Hi, I'm Cyrus. Nice to Meet you 😎</h1>
+          <audio id="hoverSound" src="../profile/audio/Eyes Blue Like The Atlantic.mp3" preload="auto"></audio>
+          <img src="../profile/images/1536110865955 (1).jpeg" alt="Cyrus Image" id="profile_image">
+          <script>
+            const hoverImage = document.getElementById("profile_image");
+            const hoverSound = document.getElementById("hoverSound");
+
+            hoverImage.addEventListener("mouseenter", function() {
+              hoverSound.play();
+            });
+
+            hoverImage.addEventListener("mouseout", function() {
+              hoverSound.pause();
+            });
+          </script>
+          <h4> 🔈 Enable audio permissions on this browser tab, for the full experience! Then see what my picture has to offer! 🎶</h4>
+          <p>
+            I joined LeWagon to begin my journey as a freelance web developer. Before the course, I worked as a Management Consultant helping organisations to improve their operational efficiency. Looking to make connections at LeWagon, so please add me to your network using the button below:
+          </p>
+          <div class="button"><a href="#">LinkedIn</a></div>
+        </div>
+        <div class="card">
+          <h2>Socials 👌 </h2>
+          <p>
+            Want to checkout some of the things I have been working on:
+          </p>
+          <ul>
+            <li class="list-inline">
+              <a href="https://github.com/Cyrus-Devlin" target="_blank">
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+            <li class="list-inline">
+              <a href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li class="list-inline">
+              <a href="https://medium.com/" target="_blank">
+                <i class="fab fa-medium"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- end of file -->
